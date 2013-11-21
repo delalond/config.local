@@ -1,0 +1,9 @@
+set(REPORTINGLIB_PACKAGE_VERSION 1.2)
+set(REPORTINGLIB_REPO_URL ssh://bbpgit.epfl.ch/sim/reportinglib/proj6.git)
+set(REPORTINGLIB_SOURCE "${CMAKE_SOURCE_DIR}/src/reportinglib")
+#set(REPORTINGLIB_REPO_TAG REP-8_9_11_12_merge)
+set(REPORTINGLIB_DEPENDS REQUIRED MPI
+                         OPTIONAL BBPDocumentation BBPPackages)
+set(REPORTINGLIB_FORCE_BUILD ${CI_BUILD})
+set(REPORTINGLIB_OPTIONAL ON)
+
